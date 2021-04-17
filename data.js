@@ -1,14 +1,30 @@
 let periodicTable = [
     {
         id: "el1",
-        atomicNumber: "1",
-        title: "Hydrogen",
-        symbol: "H"
+        answer: "Hydrogen",
+        questions:[
+            {
+                q1: "fules the sun",
+                points: 10
+            },
+            {
+                q1: "atomic number: H",
+                points: 5
+            }
+        ]
     },
     {
         id: "el2",
-        atomicNumber: "2",
-        title: "Helium",
-        symbol: "He"
+        answer: "Helium",
+        questions:[
+            {
+                q1: "the lightest gas and is in the noble gasess",
+                points: 10
+            },
+            {
+                q1: "atomic number: He",
+                points: 5
+            }
+        ]
     }
 ];

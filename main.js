@@ -1,24 +1,31 @@
-function makeArray(){
-    let elements = [];
-    for (let i = 1; i <= 118; i++){
-        elements.push(`el${i}`);
+let randomNumber = Math.floor(Math.random() * periodicTable.length);
+let guesses = 0;
+let question = periodicTable[randomNumber].questions[guesses].q1;
+let rightAnswer = periodicTable[randomNumber].answer;
+let points = 0; 
+function askQuestion() {
+    let question = periodicTable[randomNumber].questions[guesses].q1;
+    document.getElementById("hint").innerText = ``;
+    console.log(`${question} :: ${rightAnswer}`)
+    let displayQa = document.getElementById("qa");
+    console.log(question);
+    displayQa.innerText = question;
+}
+askQuestion()
+console.log(points);
+function validate() {
+    if (answer.value == rightAnswer) {
+        document.getElementById("hint").innerText = `You guessed it! The answer was ${rightAnswer}`;
+        points = periodicTable[randomNumber].questions[guesses].points; 
+        document.getElementById("points").innerText = points;
+    } else {
+        console.log("BOOO")
+        guesses = 1;
+        askQuestion();
+        document.getElementById("hint").innerText = ``;
+  
     }
-    return elements
 }
-function validate(){
-    document.getElementById("hint").innerHTML = `You guessed it! The answer was  ${secert.title}, element ${secert.id.slice(2)}`;
-}
-function playGame(){
-    document.getElementById("hint").innerHTML = "";
-    let elements = makeArray();
-    let randomIndex = Math.floor(Math.random() * 118);
-    let randomElement = document.getElementById(elements[randomIndex]);
-    let secert = randomElement;
-    console.log(secert.id.slice(2));
-    secert.addEventListener('click', function(){
-        document.getElementById("hint").innerHTML = `You guessed it! The answer was  ${secert.title}, element ${secert.id.slice(2)}`;
-    });
-}
-playGame();
+
 let playBtn = document.getElementById("play");
-playBtn.addEventListener("click", playGame);
+playBtn.addEventListener("click", validate);
