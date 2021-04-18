@@ -24,28 +24,6 @@ td:hover{
     border:1px solid black;
     cursor:pointer;
 }
-.red{
-   background-color:rgb(255, 149, 130);
-}
-.orange{
-    background-color:rgb(250, 209, 132);
-}
-.blue{
-    background-color:rgb(171, 203, 255);
-
-}
-.noble{
-    background-color:rgb(255, 226, 138);
-}
-.halogen{
-    background-color:rgb(255, 208, 66);
-}
-.aqua{
-    background-color:rgb(131, 246, 212);
-}
-.darkBlue{
-    background-color:rgb(131, 162, 246);
-}
 .play{
     background-color: rgb(189, 120, 42);
     border:none;
@@ -54,12 +32,43 @@ td:hover{
     border-radius: 8px;
     color:white;
 }
+.red{
+   background-color:rgb(255, 149, 130);
+   background-image: linear-gradient(to bottom right, rgb(255, 149, 130), rgb(255, 96, 68));
+}
+.orange{
+    background-color:rgb(250, 209, 132);
+    background-image: linear-gradient(to bottom right, rgb(250, 209, 132), rgb(255, 198, 93));
+}
+.blue{
+    background-color:rgb(171, 203, 255);
+    background-image: linear-gradient(to bottom right, rgb(171, 203, 255), rgb(122, 173, 255));
+}
+.noble{
+    background-color:rgb(255, 226, 138);
+    background-image: linear-gradient(to bottom right, rgb(255, 226, 138), rgb(255, 201, 40));
+}
+.halogen{
+    background-color:rgb(255, 208, 66);
+    background-image: linear-gradient(to bottom right, rgb(255, 208, 66), rgb(255, 191, 0));
+}
+.aqua{
+    background-color:rgb(131, 246, 212);
+    background-image: linear-gradient(to bottom right, rgb(131, 246, 212), rgb(0, 255, 179));
+}
+.darkBlue{
+    background-color:rgb(131, 162, 246);
+    background-image: linear-gradient(to bottom right, rgb(131, 162, 246), rgb(47, 102, 255));
+}
 .metaliod{
     background-color: rgb(152, 247, 148);
+    background-image: linear-gradient(to bottom right, rgb(152, 247, 148), rgb(29, 255, 21));
 }
 .nonmetal{
     background-color:rgb(65, 184, 57);
+    background-image: linear-gradient(to bottom right, rgb(65, 184, 57), rgb(20, 186, 9));
 }
 .metal{
     background-color:rgb(0, 255, 53);
+    background-image: linear-gradient(to bottom right, rgb(0, 255, 53), rgb(0, 223, 45));
 }
